@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Personal Website </title>
+		<link rel="stylesheet" href="style.css"/>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&family=Passions+Conflict&family=Satisfy&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="container">
+			<header>
+			<div class="headerpic">
+				<img class="cornerpic" src="bitmoji4.png" alt="my bitmoji" />
+				<div>
+					
+				<div>
+					<h2>Who am I?</h2>
+					</div>
+					</div>
+				</div>
+				
+				<nav>
+					<ul>
+					 <li><a href="index.html">Home</a></li>
+					  <li><a href="Hobbies.html">Hobbies</a></li>
+					  <li><a href="My Travels.html">My travels</a></li>
+					  <li><a href="About.html">About</a></li>
+					</ul>
+				</nav>
+			</header>
+		<main>
+			<div class="two-column">
+				<div>
+					<img class="me" src="aboutme.jpg" alt="me" />
+				</div>
+				<div>
+					<h1> About me </h1>
+					<p>
+						I don't like talking about myself. Thet is why you see a comment section. Ask me something you want to know and I will answer you.
+					</p>
+					
+					<section id="app">
+    <div class="containercom">
+      <div class="row2">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div>
+          </div>
+          </div>
+      <div class="row2">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+					
+					</div>
+				
+				</div>
+				<div class="three-column">
+				<div>
+					<a href="Hobbies.html">
+					<p> 
+					<img class="bottomsquare" src="bitmoji7.png" alt="werewolf" />
+					</p>
+				</a>
+				</div>
+				<div>
+				<a href="index.html">
+					<p>
+					<img class="bottomsquare" src="bitmoji.png" alt="bitmoji" />
+					</p>
+					</a>
+				</div>
+				<div>
+				<a href="My travels.html">
+						<p>
+					<img class="bottomsquare" src="bitmoji9.png" alt="me" />
+					</p>
+				</a>
+				</div>
+			</div>
+		</main>
+	<footer>
+		<p>
+			©2022
+		</p>
+	</footer>
+			</div>
+	</body>
